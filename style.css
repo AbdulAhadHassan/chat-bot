@@ -1,0 +1,17 @@
+.text-mess ul{
+    list-style: none;
+    flex-direction: column-reverse;
+    margin: 0%;
+    justify-content: end ;
+    /* align-items:  ; */
+    padding: 0%;
+    background-color: antiquewhite;
+}
+
+.text-mess{
+    height: 500px;
+    background-color: rgb(55, 89, 89);
+    align-content: flex-end;
+}
+
+
