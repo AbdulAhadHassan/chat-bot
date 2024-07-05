@@ -12,26 +12,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-column align-items-center mt-5 ">
 
-        <div class="col-4 d-flex flex-column">
-            <div> 
+        <div class="col-4 d-flex flex-column ">
+            
+            <div class="heading-bot py-2"> 
                 <h2>chat bot 1.0</h2>
             </div>
-            
-            <div class="text-mess">
-                <ul id="user-imp" class="d-flex flex-column ">
-                    
-                </ul>
+            <div class="text-mess-main pb-3">
                 
-                <ul class="bot-imp" class="d-flex flex-column justify-content-start">
+                <div class="text-mess ">
+                    <ul id="user-imp" class="d-flex flex-column ">
+                        
+                    </ul>
                     
-                </ul>
+                    <ul class="bot-imp" class="d-flex flex-column justify-content-start"></ul>
+                </div>
+                
+                <div id="typing" style="display: none;  text-align: left; " class="col-12 mt-5">
+                    
+                    <div style="position: relative; display: flex; justify-content: start;" class="col-12">
+                        <span class="dots-cont col-12 p-3" style="display: flex; justify-content: start;"> <span class="dot dot-1"></span> <span class="dot dot-2"></span> <span class="dot dot-3"></span> </span>  
+                        
+                    </div>
+                </div>
             </div>
-            
-            <div class="col-12 d-flex justify-content-between">
-                <input id="imp-value" class="col-9" onkeydown="botAnswer()" type="text">
-                <button class="col-2" onclick="botAnswer()"> send </button>
+            <div class="col-12 d-flex  justify-content-between">
+                <input id="imp-value" class="col-9 ps-2" placeholder="SAND MESSAGE..." onkeydown="enter123()" type="text">
+                <button class="col-3 btn-send" onclick="botAnswer()"> send </button>
             </div>
         </div>    
         
